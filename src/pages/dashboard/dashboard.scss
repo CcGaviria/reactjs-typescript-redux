@@ -1,0 +1,33 @@
+dialog {
+  position: relative;
+  width: 22em;
+  align-items: center;
+  display: flex;
+  margin: 1em auto;
+  background: rgb(2,0,36);
+  background-color: #7f5a83;
+  background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+  color: white;
+}
+
+.btn-continue {
+  background-image: linear-gradient(to right, #114357 0%, #7f5a83  51%, #114357  100%);
+  border: 1px solid black;
+  justify-content: center;
+
+}
+.body-dashboard {
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+section {
+  small {
+    font-size: 1.7em;
+    font-weight: 700;
+    text-align: center;
+    color: #ffc107;
+  }
+}
