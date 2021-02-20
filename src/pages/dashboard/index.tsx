@@ -26,7 +26,7 @@ function Dashboard() {
         "https://www.sciencemag.org/sites/default/files/styles/article_main_large/public/SannedeJong_1280p.jpg",
         "https://wallpapercave.com/wp/wp2402464.jpg",
         "https://wallpapercave.com/wp/wp2402485.jpg"
-    ]
+    ];
 
     const handleSelect = (selectedIndex: number, e: any) => {
         setIndex(selectedIndex);
@@ -36,11 +36,10 @@ function Dashboard() {
 
     return (
         <div className={'body-dashboard'}>
-            <Carousel interval={50000} activeIndex={index} onSelect={handleSelect}>
+            <Carousel interval={5000} activeIndex={index} onSelect={handleSelect}>
                 {
                     users.map((user: ItfUser, index: number) =>
                         <Carousel.Item>
-
                                 <img
                                     className="d-block w-100"
                                     src={setImages[index]}
@@ -102,8 +101,6 @@ function Dashboard() {
                 </section>
             </dialog>
             </Link>
-
-
         </div>
     )
 }
